@@ -1,0 +1,41 @@
+food_1 = input ("Enter food item name:\n" ) 
+
+price_1 = float (input("Enter item price:\n" ))
+
+quantity_1 = int (input("Enter item quantity:\n"))
+
+total_price1 = (price_1) * (quantity_1)
+
+print ("\nRECEIPT")
+
+print (quantity_1, food_1, "@ $" + '{:.2f}'.format(price_1), "=", "$"+'{:.2f}'.format(total_price1))
+
+print ("Total cost:", "$"+'{:.2f}'.format(total_price1))
+
+print ("")
+
+food_2 = input ("\nEnter second food item name:\n" ) 
+
+price_2 = float (input("Enter item price:\n" ))
+
+quantity_2 = int (input("Enter item quantity:\n"))
+
+total_price2 = (price_2) * (quantity_2)
+
+print ("\nRECEIPT")
+
+print (quantity_1, food_1, "@ $" + '{:.2f}'.format(price_1), "=", "$"+'{:.2f}'.format(total_price1))
+
+print (quantity_2, food_2, "@ $" + '{:.2f}'.format(price_2), "=", "$"+'{:.2f}'.format(total_price2))
+
+total_price3 = total_price1 + total_price2
+
+print ("Total cost:", "$"+'{:.2f}'.format(total_price3))
+
+gratuity_1 = (.15 * total_price3)
+
+total_price4 = total_price3 + gratuity_1
+
+print ("\n15% gratuity:", "$"+'{:.2f}'.format(gratuity_1))
+
+print ("Total with tip:", "$"+'{:.2f}'.format(total_price4))
